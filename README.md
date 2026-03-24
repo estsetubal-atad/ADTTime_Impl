@@ -130,7 +130,7 @@ Using the Time ADT, determine:
 
 ## 4 | Additional operations (2/2)
 
-Add the following operations and the *doxygen* documentation to the ADT:
+Add the following operations and the *doxygen* documentation to the ADT and test them:
 
 ```cpp
 int timeToSeconds(PtTime t, int *totalSeconds);
