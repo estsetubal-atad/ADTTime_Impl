@@ -7,9 +7,9 @@ int main() {
     PtTime t = timeCreate();
     timePrint(t);  // "00:00:00"
 
-    int error = timeSet(t, 14, 30, 45);
-    if( error != TIME_OK ) {
-        printf("An error occured: %d\n", error);
+    int errorCode = timeSet(t, 14, 30, 45);
+    if( errorCode != TIME_OK ) {
+        printf("An error occured: %d\n", errorCode);
     } else {
         timePrint(t);  // "14:30:45"
     }

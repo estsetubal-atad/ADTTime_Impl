@@ -9,9 +9,12 @@ typedef struct time {
 
 PtTime timeCreate() {
     
+    PtTime newTime = (PtTime)malloc(sizeof(Time));
+    if(newTime == NULL) return NULL; //Allocation failed
+    
     // TODO
 
-    return NULL;
+    return newTime;
 }
 
 int timeDestroy(PtTime *ptT) {

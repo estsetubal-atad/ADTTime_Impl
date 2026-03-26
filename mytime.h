@@ -40,7 +40,7 @@ int timeDestroy(PtTime *ptT);
  * @brief Retrieves the hour component of a Time instance.
  * 
  * @param t Pointer to a Time instance.
- * @param hour Address to store the hour value.
+ * @param hour [out] Address to store the hour value.
  * @return TIME_OK if successful, TIME_NULL if input is NULL.
  */
 int timeGetHour(PtTime t, int *hour);
@@ -49,7 +49,7 @@ int timeGetHour(PtTime t, int *hour);
  * @brief Retrieves the minute component of a Time instance.
  * 
  * @param t Pointer to a Time instance.
- * @param minute Address to store the minute value.
+ * @param minute [out] Address to store the minute value.
  * @return TIME_OK if successful, TIME_NULL if input is NULL.
  */
 int timeGetMinute(PtTime t, int *minute);
@@ -58,7 +58,7 @@ int timeGetMinute(PtTime t, int *minute);
  * @brief Retrieves the second component of a Time instance.
  * 
  * @param t Pointer to a Time instance.
- * @param second Address to store the second value.
+ * @param second [out] Address to store the second value.
  * @return TIME_OK if successful, TIME_NULL if input is NULL.
  */
 int timeGetSecond(PtTime t, int *second);
